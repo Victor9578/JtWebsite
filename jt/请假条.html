@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>电子假条</title>
+    <script type="text/javascript">
+        //JS监听浏览器文字大小代码
+        //1rem=24px
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 375) + 'px';
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        body {
+            font-family: "微软雅黑";
+            /*font-size: 0.625;*/
+            padding: 1rem 1rem;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .clean {
+            clear: both;
+            width: 0px;
+            height: 0px;
+            line-height: 0px;
+            overflow: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #f3f3f3;
+        }
+
+        .header-rt {
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 0.1rem;
+        }
+
+        .header-rb {
+            font-size: 0.6rem;
+        }
+
+        header img {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.6rem;
+            border-radius: 50%;
+        }
+
+        .list-cont {
+            padding: 0.6rem 0;
+
+        }
+
+        .list {
+            font-size: 0.7rem;
+            display: flex;
+            flex-direction: row;
+            line-height: 1.3rem;
+        }
+
+        .lisft {
+            width: 6rem;
+        }
+
+        .listr {
+            color: #6c6c6c;
+        }
+
+        .list-center {
+            font-size: 0.7rem;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #f3f3f3;
+            color: #6c6c6c;
+        }
+
+        .list-center-ul li {
+            margin: 0.3rem 0;
+        }
+
+        .foot {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .foot img {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.6rem;
+            border-radius: 50%;
+        }
+
+        .foot-r {
+            flex: 1;
+        }
+
+        .foot-rb {
+            font-size: 0.6rem;
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .foot-rb > div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .foot-context {
+            color: #6c6c6c;
+            font-size: 0.7rem;
+            line-height: 1.3rem;
+            text-indent: 2em;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://wx.qlogo.cn/mmopen/vi_32/Vdnr6JvGjZNGK4yKPTl7t5t8ibMZxJ1dIH0oZa0KlklcSJeRpficlNA9eltFtmrEdTteIHQYAd7kXmEA8JHCVQ6w/132"/>
+    <div class="header-r">
+        <div class="header-rt">仵西龙</div>
+        <div class="header-rb">地质与环境学院(地质1802)</div>
+    </div>
+</header>
+<section>
+    <ul class="list-cont">
+        <li class="list">
+            <div class="lisft">请假事由:</div>
+            <div class="listr">事假</div>
+        </li>
+        <li class="list">
+            <div class="lisft">请假开始时间:</div>
+            <div class="listr">
+                2021-03-21 16:40
+            </div>
+        </li>
+        <li class="list">
+            <div class="lisft">请假结束时间:</div>
+            <div class="listr">
+                2021-03-21 23:40
+            </div>
+        </li>
+        <li class="list">
+            <div class="lisft">紧急联系人:</div>
+            <div class="listr">
+                18847194578
+            </div>
+        </li>
+        <li class="list">
+            <div class="lisft">申请时间:</div>
+            <div class="listr">2021-03-21 12:41</div>
+        </li>
+        <li class="list">
+            <div class="lisft">是否离校:</div>
+            <div class="listr">
+                    离校
+            </div>
+        </li>
+        <li class="list">
+                <div class="lisft">外出地点:</div>
+                <div class="listr">
+                    学府考研
+                </div>
+        </li>
+    </ul>
+</section>
+<section class="list-center">
+    导员，需要外出上课
+</section>
+<ul class="list-center-ul">
+</ul>
+<section class="foot">
+    <img src="https://wx.qlogo.cn/mmopen/vi_32/uPdoKACKvpwcRpJTMXWu7FJgKJt424qSbQqI2rWict1icv1melyvsh46ib8FHWh7KXfMEhPbo5eX40JqGI7qrQe3A/132"/>
+    <div class="foot-r">
+        <div class="header-rt">慈继豪</div>
+        <div class="foot-rb">
+            <div>
+            <div>
+                审批通过
+            </div>
+    <div>2021-03-21 12:42</div>
+    </div>
+    <div></div>
+    </div>
+    </div>
+</section>
+<div class="clean"></div>
+</body>
+</html>

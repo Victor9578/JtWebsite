@@ -1,0 +1,27 @@
+nohup: ignoring input
+ * Serving Flask app "jay" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:9578/ (Press CTRL+C to quit)
+127.0.0.1 - - [24/May/2021 13:39:33] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [24/May/2021 13:39:33] "[37mGET /static/css/main.min.css HTTP/1.0[0m" 200 -
+127.0.0.1 - - [24/May/2021 13:39:33] "[37mGET /static/css/iconfont.css HTTP/1.0[0m" 200 -
+127.0.0.1 - - [24/May/2021 13:39:33] "[37mGET /static/js/vendor_main.min.js HTTP/1.0[0m" 200 -
+127.0.0.1 - - [24/May/2021 13:39:33] "[33mGET /favicon-16x16.png HTTP/1.0[0m" 404 -
+127.0.0.1 - - [24/May/2021 13:39:33] "[33mGET /favicon-32x32.png HTTP/1.0[0m" 404 -
+<bound method MultiDict.getlist of ImmutableMultiDict([('i', '18409040216'), ('mz', '刘一凡'), ('dd', '临潼'), ('yy', '牙痛去看牙'), ('tx', 'https://p0.meituan.net/dpgroup/f4b9eecc2e0451d901c0bc3c233bad3a1140864.jpg'), ('qsm', '12:40'), ('zsm', '17:30')])>
+12:40
+目录存在
+line 16: mode: byte
+127.0.0.1 - - [24/May/2021 13:42:39] "[32mPOST /xinxi HTTP/1.0[0m" 302 -
+127.0.0.1 - - [24/May/2021 13:45:11] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [24/May/2021 13:45:11] "[33mGET /favicon-32x32.png HTTP/1.0[0m" 404 -
+127.0.0.1 - - [24/May/2021 13:45:11] "[33mGET /favicon-16x16.png HTTP/1.0[0m" 404 -
+127.0.0.1 - - [24/May/2021 13:48:40] "[37mGET / HTTP/1.0[0m" 200 -
+<bound method MultiDict.getlist of ImmutableMultiDict([('i', '18409040216'), ('mz', '刘一凡'), ('dd', '临潼'), ('yy', '牙疼 去医院了'), ('tx', 'https://edu-image.nosdn.127.net/B45972AC8E283E651B0FC808852F9173.jpg'), ('qsm', '14:00'), ('zsm', '17:49')])>
+14:00
+目录存在
+line 16: mode: byte
+127.0.0.1 - - [24/May/2021 13:49:28] "[32mPOST /xinxi HTTP/1.0[0m" 302 -
