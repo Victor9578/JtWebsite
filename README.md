@@ -1,4 +1,4 @@
 # website
 JtWebsite  
-[👆直达](https://bl.jaywxl.tk)
+取消了 
 <p align="right">- by Jaywxl</p>
